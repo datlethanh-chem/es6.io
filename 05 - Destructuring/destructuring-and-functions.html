@@ -16,6 +16,11 @@
     return converted;
   }
 
+  const { MEX, GPB, AUD} = convertCurrency(100); 
+  // (1) order is not important; (2) less variables are acceptable
+
+  // destructure {} object into variables
+  // empty {} is needed at the end for destructuring by default
   function tipCalc({ total = 100, tip = 0.15, tax = 0.13 } = {}) {
     return total + (tip * total) + (tax * total);
   }
